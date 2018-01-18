@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Kavivanar");
+body {
+  font-family: "Kavivanar", cursive;
+}
+
+body .board {
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  background-color: #AEEBF2;
+  border-radius: 5%;
+}
+
+body .board h1 {
+  font-size: 50px;
+  padding: 15px;
+}
+
+body .board button {
+  font-family: "Kavivanar", cursive;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  background-color: #78D66B;
+  border-radius: 15%;
+}
+
+body .board .btn-delete {
+  padding: 0 5px;
+  background-color: #FC0320;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+body .board .column-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .board .column-container .column {
+  display: inline-block;
+  background-color: #F5F547;
+  margin: 10px;
+  padding: 10px;
+  width: 40%;
+  min-height: 300px;
+  min-width: 250px;
+}
+
+body .board .column-container .column h2 {
+  font-style: bold;
+  font-size: 32px;
+}
+
+body .board .column-container .column .column-card-list {
+  min-height: 150px;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .board .column-container .column .column-card-list .card {
+  background-color: #FFF;
+  margin-top: 5px;
+  width: 85%;
+}
+
+body .board .column-container .column .column-card-list .card .btn-delete {
+  float: right;
+}
+
+body .board .column-container .column .column-card-list .card p {
+  margin: 5px 10px;
+}
+/*# sourceMappingURL=style.prefixed.css.map */
