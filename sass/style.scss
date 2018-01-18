@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+$fonts: 'Kavivanar', cursive;
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin flex-style() {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+body {
+	font-family: $fonts;
+	
+	& .board {
+	text-align: center;
+	margin: 5px;
+	padding: 10px;
+	background-color: #AEEBF2;
+	@include border-radius(5%);
+
+		& h1 {
+			font-size: 50px;
+			padding: 15px;
+		}
+		& button {
+			font-family: $fonts;
+			margin: 5px;
+			padding: 10px;
+			border: none;
+			font-size: 15px;
+			background-color: #78D66B;
+			@include border-radius(15%);
+		}
+		& .btn-delete {
+			padding: 0 5px;
+			background-color: #FC0320;
+			font-weight: bold;
+			@include border-radius(50%);
+
+		}
+		& .column-container {
+			@include flex-style ();
+
+			& .column {
+				display: inline-block;
+				background-color: #F5F547;
+				margin: 10px;
+				padding: 10px;
+				width: 40%;
+				min-height: 300px;
+				min-width: 250px;
+
+				& h2 {
+					font-style: bold;
+					font-size: 32px;
+				}
+				& .column-card-list {
+					min-height: 150px;
+					padding: 0;
+					list-style-type: none;
+					@include flex-style ();
+
+			        & .card {
+						background-color: #FFF;
+						margin-top: 5px;
+						width: 85%;
+
+						& .btn-delete {
+							float: right;
+						}
+						& p{
+							margin: 5px 10px;
+						}
+			        }
+				}
+			}
+		}
+	}
+}
