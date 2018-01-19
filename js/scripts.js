@@ -100,7 +100,9 @@ $(function() {
   		.click(function(){
 			var name = prompt('Enter a column name');
 			var column = new Column(name);
+		if (column.name) {
     		board.addColumn(column);
+    	}	
  	});
   		// CREATING COLUMNS
 	var todoColumn = new Column('To do');
