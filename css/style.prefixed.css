@@ -54,11 +54,10 @@ body .board .column-container {
 body .board .column-container .column {
   display: inline-block;
   background-color: #F5F547;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
-  width: 40%;
   min-height: 300px;
-  min-width: 250px;
+  min-width: 400px;
 }
 
 body .board .column-container .column h2 {
@@ -90,7 +89,7 @@ body .board .column-container .column .column-card-list {
 body .board .column-container .column .column-card-list .card {
   background-color: #FFF;
   margin-top: 5px;
-  width: 85%;
+  min-width: 320px;
 }
 
 body .board .column-container .column .column-card-list .card .btn-delete {
