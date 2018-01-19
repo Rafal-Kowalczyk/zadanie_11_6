@@ -68,7 +68,7 @@ body .board .column-container .column .column-card-list {
 
 body .board .column-container .column .column-card-list .card {
   background-color: #FFF;
-  margin-top: 5px;
+  margin: 10px;
   min-width: 320px;
 }
 
