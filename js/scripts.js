@@ -29,9 +29,9 @@ $(function() {
 	    //
 	    $columnAddCard.click(function() {
         	var description = prompt('Enter the name of the card');
-		if (description){
-		self.addCard(new Card(description));
-		}
+			if (description){
+				self.addCard(new Card(description));
+			}
 	    });
 		//
 	     $column
