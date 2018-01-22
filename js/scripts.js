@@ -28,7 +28,10 @@ $(function() {
 	    });
 	    //
 	    $columnAddCard.click(function() {
-        	self.addCard(new Card(prompt("Enter the name of the card")));
+        	var description = prompt('Enter the name of the card');
+		if (description){
+		self.addCard(new Card(description));
+		}
 	    });
 		//
 	     $column
